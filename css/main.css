@@ -121,14 +121,14 @@ h2 {
   font-family: 'New Tegomin', serif;
   color: #564e4e;
   font-size: 1.5rem;
-  line-height: 1.5;
+  line-height: 1.75;
   width: 100%;
   font-weight: 400;
 }
 
 h3 {
   font-family: 'New Tegomin', serif;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 h4 {
@@ -138,7 +138,7 @@ h4 {
 
 h5 {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .language-wrapper p, .tool-wrapper p {
@@ -151,12 +151,6 @@ h5 {
   font-weight: 400;
 }
 
-h3, h4, h5 {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.5;
-  width: 100%;
-}
-
 p, li {
   font-size:  1rem;
   line-height: 1.5;
@@ -167,14 +161,14 @@ span {
 }
 
 img {
-  width: 40%;
+  width: 60%;
 }
 
 figure {
   margin: 0;
 }
 
-header, #work, #skills, #about, footer {
+#work, #skills, #about, footer {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -254,9 +248,9 @@ footer .copyright p {
 header {
   background-color: #c1ae8d;
 }
-header figure {
+header .logo {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   width: 20%;
@@ -275,11 +269,11 @@ nav ul {
 li a:hover {
   text-decoration: underline solid #849271 3px;
 }
-header h1 {
+.intro h1 {
   width: 100%;
   text-align: center;
 }
-header h2 {
+.intro h2 {
   width: 100%;
   padding: 0 40px 0 30px;
 }
@@ -299,10 +293,10 @@ header h2 {
   align-items: flex-start;
 }
 .home-portfolio-piece {
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  width: 100%;
   align-items: center;
 }
 .home-portfolio-piece h4 {
@@ -310,8 +304,8 @@ header h2 {
 }
 .home-portfolio-piece figure {
   width: 100%;
+  filter: drop-shadow(1px 2px 6px lightgreen);
 }
-
 /* ----------- Skills ----------- */
 #skills {
   background-color: #849271;
@@ -359,7 +353,6 @@ footer .contact-wrapper {
 }
 footer .contact-info {
   width: 60%;
-  color: #564e4e;
 }
 footer a:hover {
   color: #849271;
@@ -368,28 +361,27 @@ footer .social {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  color: #564e4e;
 }
 footer .social-icons {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  color: #564e4e;
+  color: white;
 }
 footer ul {
   width: 100%;
-  color: #564e4e;
 }
 footer .social-icons li {
+  width: 40%;
+  height: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2em;
-  margin: 0 3px 0 3px;
 }
-footer .social-icons li a {
-  color: #564e4e;
+footer .social-icons li i {
+  font-size: 1.75rem;
+  color: white;
 }
 footer .social-icons li a:hover {
   color: #849271;
@@ -404,27 +396,6 @@ footer p .copyright {
   color: #564e4e;
   padding-bottom: 10px;
 }
-
-
-  /* ------------------------ Mobile Styles ------------------------------ */
-main {
-
-}
-.portfoilio {
-
-}
-.work {
-
-}
-.portfolio-wrapper {
-
-}
-.home-portfolio-piece {
-
-}
-
-  
-  
 
   /* ==========================================================================
      Helper classes
@@ -514,10 +485,309 @@ main {
      Modify as content requires.
      ========================================================================== */
   
-  @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+  @media only screen and (min-width: 768px) {
+    /* Tablet Styles */
+  
+  .content-wrapper {
+    max-width: 640%;
+    margin: 100px 0;
+  }
+
+  /* Font Styles */
+  h1 {
+    font-size: 2rem;
+    line-height: 1.44;
+  }
+  h2 {
+    font-size: 1.75rem;
+    line-height: 1.333;
+  }
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+  h4 {
+    font-size: 1.25rem;
+    line-height: 1.1;
+  }
+  h5 {
+    font-size: 1.1rem;
+    line-height: 1;
+  }
+  header nav ul li {
+    font-size: 1rem;
+  }
+  header {
+    padding: 33px 0;
+  }
+  header nav {
+    margin: 0 0 80px 0;
+  }
+
+  /* Work */
+  #work {
+    padding-top: 80px;
+  }
+  #skills {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+  footer {
+    padding: 40px 0;
+  }
+  h2 {
+    margin-top: 40px;
+  }
+  .portfolio-header {
+    margin: 0 0 60px 0;
+  }
+  .portfolio-description {
+    margin: 0 0 30px 0;
+  }
+  .skills-header {
+    margin-bottom: 40px;
+  }
+  #skills h4 {
+    margin: 40px 0 20px 0;
+  }
+  .about-text {
+    margin: 0 0 30px P;
+  }
+  .contact-info {
+    margin: 80px 0;
+  }
+  .contact-title {
+    margin: 0 0 30px 0;
+  }
+
+  /* Header */
+  header { 
+    justify-content: space-around;
+  }
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .logo {
+    width: 25%;
+    padding-bottom: 20px;
+  }
+  header nav {
+    width: 20;
+  }
+  header nav ul {
+    justify-content: space-between;
+  }
+  .header-divider {
+    display: none;
+  }
+  .intro h1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .intro h2 {
+    max-width: 80%;
   }
   
+  /* Portfolio */
+  .portfolio-wrapper {
+    justify-content: space-around;
+  }
+  .home-portfolio-piece {
+    width: 45%;
+    align-items: center;
+  }
+  .project-description {
+    width: 95%;
+  }
+  .language-wrapper, .design-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-flow: row wrap;
+    text-transform: uppercase;
+  }
+  .skill, .tool {
+    width: 45%;
+  }
+  .language-wrapper p, .design-wrapper p {
+    padding: 15px 0;
+  }
+
+  /* About */
+  .about-content-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+  #about figure {
+    width: 80%;
+  }
+  .about-text {
+    text-align: left;
+  }
+
+  /* Footer */
+  .contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .contact-info {
+    width: 33%;
+  }
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+  footer .social-icons li i {
+    font-size: 2rem;
+  }
+  footer .copyright {
+    width: 100%;
+  }
+}
+
+
+  @media only screen and (min-width: 1200px) {
+    /* Desktop Styles */
+  .content-wrapper {
+    max-width: 1450px;
+  }
+
+  /* Font Styles */
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.75rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+  .language-wrapper p, .design-wrapper p {
+    font-size: 1rem;
+  }
+
+  /* Margins */
+  header {
+    padding-top: 80px;
+    padding-bottom: 140px;
+  }
+  .logo {
+    padding-left: 5px;
+  }
+  nav {
+    margin-bottom: 80px;
+  }
+  #work {
+    padding-top: 80px;
+  }
+  #skills {
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+  #about {
+    padding-top: 40;
+    padding-bottom: 40px;
+  }
+  footer {
+    padding: 140px 0 140px 0;
+  }
+  h2 {
+    margin: 40px 0 0 0;
+  }
+  .portfolio-header {
+    margin: 0 0 60px 0;
+  }
+  .portfolio-description {
+    margin: 0 0 30px 0;
+  }
+  #skills .content-wrapper {
+    max-width: 900px;
+  }
+  .skills-header {
+    margin-bottom: 40px;
+  }
+  .about-text {
+    margin: 0 0 30px 0;
+  }
+  .contact-info {
+    margin: 80px 0 80px 0;
+  }
+  .contact-title {
+    margin: 0 0 30px 0;
+  }
+
+  /* Header */
+  header .content-wrapper {
+    justify-content: flex-end;
+  }
+  .logo {
+    justify-content: left;
+    width: 25%;
+  }
+  header nav {
+    justify-content: flex-end;
+    width: 45%;
+  }
+  .home-title {
+    max-width: 95%;
+  }
+  .home-title h2 {
+    max-width: 70%;
+  }
+  
+  /* Portfolio */
+  .home-portfolio-piece {
+    width: 30%;
+  }
+
+  /* Skills */
+  .skill, .tool {
+    width: 30%;
+  }
+
+  /* About */
+  .about-content-wrapper {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #about figure {
+    width: 80%;
+  }
+  .about-info {
+    width: 50%;
+  }
+
+  /* Footer */
+  footer .contact-wrapper {
+    max-width: 70%;
+  }
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+}
+
+
+
   @media print,
     (-webkit-min-device-pixel-ratio: 1.25),
     (min-resolution: 1.25dppx),
