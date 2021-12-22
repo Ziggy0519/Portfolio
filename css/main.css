@@ -112,7 +112,7 @@ a {
 h1 {
   font-family: 'New Tegomin', serif;
   color:#564e4e;
-  font-size: 2rem;
+  font-size: 2.2rem;
   line-height: 1.5;
   width: 100%;
 }
@@ -120,7 +120,7 @@ h1 {
 h2 {
   font-family: 'New Tegomin', serif;
   color: #564e4e;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 1.75;
   width: 100%;
   font-weight: 400;
@@ -132,7 +132,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'New Tegomin', serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.25rem;
 }
 
@@ -156,10 +156,6 @@ p, li {
   line-height: 1.5;
 }
 
-span {
-  font-weight: bold;
-}
-
 img {
   width: 60%;
 }
@@ -168,7 +164,7 @@ figure {
   margin: 0;
 }
 
-#work, #skills, #about, footer {
+#projects, #skills, #about, footer {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -178,9 +174,9 @@ figure {
 .content-wrapper {
   width: 85%;
 }
-#work p, #about p {
+#projects p, #about p {
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
 
 /* -------- Margins & Padding ------- */
@@ -195,38 +191,35 @@ header {
   padding-bottom: 60px;
 }
 nav {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
+  padding-top: 20px;
 }
-#work {
-  padding-top: 60px;
+figure {
+  padding: 20px 0 10px 0;
+}
+#projects {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 #skills {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 #about {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-footer {
-  padding: 80px 0;
-}
-h2 {
-  margin-top: 60px;
-}
-h3 {
-  margin-bottom: 20px;
-}
-h4 {
-  margin: 0 0 40px 0;
+.projects p span {
+  margin: 0;
+  padding-bottom: 20px;
 }
 .project-description {
   margin: 0 0 30px 0;
 }
 #skills {
-  padding-top: 80px;
+  padding-top: 40px;
 }
 .skills-header {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .about-info h3 {
   margin: 40px 0 40px 0;
@@ -235,20 +228,14 @@ h4 {
   margin: 0 0 30px 0;
 }
 #contact h3 {
-  margin: 0 0 30px 0;
+  padding-top: 40px;
 }
-.contact-info {
-  margin: 0 0 30px 0;
-}
-footer .copyright p {
-  margin-top: 60px;
-}
-
+ 
   /* --------------------------- Base Header Styles --------------------- */
 header {
   background-color: #c1ae8d;
 }
-header .logo {
+#logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,16 +262,23 @@ li a:hover {
 }
 .intro h2 {
   width: 100%;
-  padding: 0 40px 0 30px;
+  padding: 0 10px 0 10px;
 }
 
 /* ---------------------------- Projects -------------------------- */
-#work, #skills {
+#projects, #skills {
   width: 100%;
   background-color: #7a989a;
 }
-#work h3 {
+#projects h2 {
   width: 100%;
+  text-decoration: underline;
+}
+#projects h4 {
+  text-decoration: underline;
+}
+#projects p span {
+  font-size: 0.8rem;
 }
 .portfolio-wrapper {
   display: flex;
@@ -311,9 +305,10 @@ li a:hover {
   background-color: #849271;
 }
 #skills h4 {
-  margin: 40px 0 40px 0;
   font-weight: bold;
+  text-decoration: underline;
 }
+
 .language-wrapper p,
 .design-wrapper p {
   background-color: #c1ae8d;
@@ -331,7 +326,7 @@ li a:hover {
   background-color: #7a989a;
 }
 #profile-photo {
-  width: 30%;
+  width: 70%;
 }
 #about h3, #about h4, #about p {
   color: #564e4e;
@@ -349,7 +344,6 @@ footer .contact-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: flex-start;
 }
 footer .contact-info {
   width: 60%;
@@ -386,10 +380,10 @@ footer .social-icons li i {
 footer .social-icons li a:hover {
   color: #849271;
 }
-footer .coffee {
+.coffee {
   padding-bottom: 02.5em;
 }
-footer p .copyright {
+.copyright p {
   margin: 20px 0;
   text-align: center;
   padding-top: 20px;
@@ -524,8 +518,8 @@ footer p .copyright {
     margin: 0 0 80px 0;
   }
 
-  /* Work */
-  #work {
+  /* Projects */
+  #projects {
     padding-top: 80px;
   }
   #skills {
@@ -608,7 +602,7 @@ footer p .copyright {
     flex-flow: row wrap;
     text-transform: uppercase;
   }
-  .skill, .tool {
+  .skills, .tools {
     width: 45%;
   }
   .language-wrapper p, .design-wrapper p {
@@ -696,7 +690,7 @@ footer p .copyright {
   nav {
     margin-bottom: 80px;
   }
-  #work {
+  #projects {
     padding-top: 80px;
   }
   #skills {
@@ -760,7 +754,7 @@ footer p .copyright {
   }
 
   /* Skills */
-  .skill, .tool {
+  .skills, .tools {
     width: 30%;
   }
 
