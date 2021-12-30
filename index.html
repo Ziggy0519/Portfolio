@@ -4,8 +4,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>KL Portfolio</title>
-  <meta name="description" content="">
+  <title>Kerie London - Freelance Designer and Developer</title>
+  <meta name="description" content="Portfolio website">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="">
@@ -30,10 +30,9 @@
 <body>
 
   <!-- Add your site or application content here -->
-
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js"></script>  
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -42,50 +41,51 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 
+ <!-- Header -->
   <header>
-    <!--- Header --->
-      <div id="logo">
-        <figure>
-          <img src="img/logo.png" alt="Logo">
+    <div id="logo">
+      <figure>
+        <img src="img/logo.png" alt="Logo">
       </figure>
-      </div>
-      <div class="header-divider"></div>
-        <nav>
-          <ul>
-            <li>
-              <a href="#projects">projects</a>
-            </li>
-            <li>
-              <a href="#skills">skills</a>
-            </li>
-            <li>
-              <a href="#about">about</a>
-            </li>
-            <li>
-              <a href="#contact">contact</a>
-            </li>
-          </ul>
-        </nav>
+    </div>
+    <div class="header-divider">
+    <nav>
+      <ul>
+        <li>
+          <a href="#projects">projects</a>
+        </li>
+        <li>
+          <a href="#skills">skills</a>
+        </li>
+        <li>
+          <a href="#about">about</a>
+        </li>
+        <li>
+          <a href="#contact">contact</a>
+        </li>
+      </ul>
+    </nav>
     
-      <div class="intro">
-      <h1>Hi, I'm Kerie</h1>
-      <h2>I'm a website designer and coder with a real love for simplicity and ease in websites and design
-      </h2>
+    <div class="intro">
+      <h1>Kerie London</h1>
+      <h3>Website designer and builder
+      </h3>
    </div>
+  </div>
 </header>
 
   <main>
+    <article class="portfolio">
+  <!-- Projects -->
       <section id="projects">
-        <!--- Projects--->
         <div class="content-wrapper"></div>
           <h2 class="portfolio-header">Projects</h2>
         <div class="portfolio-wrapper">
-          <!--- Unplugged Retreat --->
+          <!-- Unplugged Retreat -->
           <div class="home-portfolio-piece">
             <figure>
               <a href="https://ziggy0519.github.io/unplugged-retreat/" target="blank">
-                <img src="img/retreat.png" alt="Screenshot of Retreat">
-              </a>
+                <img src="img/retreat.png" alt="Screenshot of Retreat"></a>
             </figure>
               <h4>Unplugged Retreat</h4>
               <p class="project-description">
@@ -98,7 +98,7 @@
                 Photoshop, Chrome DevTools, GitHub Pages</span></p>
           </div>
         <div class="portfolio-wrapper">
-          <!--- Dorothy De Long --->
+          <!-- Dorothy De Long -->
           <div class="home-portfolio-piece">
             <figure>
               <img src="img/dorothy.png" alt="First website design project">   
@@ -115,7 +115,7 @@
           </div>
         </div>
         <div class="portfolio-wrapper">
-          <!--- Sticky Notes --->
+          <!-- Sticky Notes -->
           <div class="home-portfolio-piece">
           <figure>
             <a href="https://xb801.csb.app/" target="blank">
@@ -133,7 +133,7 @@
             CodeSandBox, Props, State</span></p>
         </div>
         <div class="portfolio-wrapper">
-          <!--- Grinded Logo --->
+          <!-- Grinded Logo -->
           <div class="home-portfolio-piece">
             <figure>
               <img src="img/logo-g.png" alt="Café logo">
@@ -150,7 +150,7 @@
           </div>
         </div>
         <div class="portfolio-wrapper">
-          <!--- Recipe Cards --->
+          <!-- Recipe Cards -->
           <div class="home-portfolio-piece">
             <figure>
               <a href="https://ziggy0519.github.io/recipe-cards/" target="blank">
@@ -170,20 +170,20 @@
             </div>
           </div>
         </div>
-        </div>
       </section>
 
-      <!--- Skills --->
+      <!-- Skills -->
 <section id="skills">
   <div class="content-wrapper">
       <h2 class="skills-header">Skills</h2>
       <h4>Developer Skills</h4>
         <div class="language-wrapper">
-          <p class="skill">HTML and CSS3</p>
+          <p class="skill">HTML and CSS</p>
           <p class="skill">Responsive Web Development</p>
           <p class="skill">Git and GitHub</p>
           <p class="skill">JavaScript</p>
           <p class="skill">React</p>
+          <p class="skill">WordPress</p>
         </div>
       <h4>Design Skills</h4>
         <div class="design-wrapper">
@@ -194,18 +194,21 @@
           <p class="skill">Icons</p> 
           <p class="skill">Style Guides</p> 
           <p class="skill">Landing Pages</p> 
+          <p class="skill">Adobe Creative Suite</p>
         </div>  
-  </div>
-</section>
+    </div>
+  </section>
+</article>
 
-<!--- About Me --->
+<!-- About Me -->
 <section id="about">
     <div class ="content-wrapper">
-      <h2>About Me</h2>
-      <figure>
-        <img src="img/kl-photo.jpg" alt id="profile-photo">
-      </figure>
-    <div class ="about-info">
+      <div class="about-wrapper">
+        <h2>About Me</h2>
+          <figure>
+            <img src="img/kl-photo.jpg" alt id="profile-photo">
+          </figure>
+      <div class ="about-info">
         <p class="about-text">
           I'm a real advocate for remote work and being able to help my friends and family with their businesses.  So joining the two together was a logical solution.  
           I started this journey in 2020 through Skillcrush where I've been learning to design and code utilising a myraid of skills.  I'm here to help your business 
@@ -214,52 +217,45 @@
           When not busy working, you can find me out and about with my two dogs, exploring beautiful Europe, 
           and sourcing the best speciality cafés around.
         </p>
-      <p><span>Looking forward to connecting and creating with you soon!</span>
-      </p>
+          <p>Looking forward to connecting and creating with you soon!</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 </main>
 
-<!--- Footer --->
+<!-- Footer -->
 <footer id="contact">
-  <h3>Contact me</h3>
   <div class="content-wrapper">
-        <div class="contact-wrapper">
+    <h3>Contact Me</h3>
+    <div class="contact-wrapper">
           <div class="contact-info">
-            <h5>Email</h5>
-            <address>
-           <p>
-             <a href="mailto:kerie_nz@yahoo.com">
-              <i class="far fa-paper-plane"></i>
-            </a>
-            <br>
-            <a href="mailto:kerie_nz@yahoo.com">kerie_nz@yahoo.com</a>
-          </p>
-          </address>
+            <h5 class="email">Email</h5>
+            <p>
+              <a href="mailto:kerie@kpl.com">
+                <i class="far fa-paper-plane"></i>
+              </a>
+            </p>
         </div>
       <div class="social">
-        <h5>Social</h5>
+        <h5 class="social-media">Social</h5>
           <ul class="social-icons">
             <li>
-              <a href="https://www.github.com/Ziggy0519" target="_blank">
-                <i class="fab fa-github">
-                </i>
+              <a href="https://github.com/Ziggy0519" target="_blank">
+               <i class="fab fa-github"></i>
               </a>
             </li>
           <li>
               <a href="https://www.linkedin.com/in/kerie-london/" target="_blank">
-                <i class="fab fa-linkedin">
-                </i>
+                <i class="fab fa-linkedin"></i>
               </a>
           </li>
         </ul>
     </div>
     <div class="contact-info">
+      <h5 class="meet-me">Coffee</h5>
       <div class="coffee">
-        <i class="fas fa-coffee">
-        </i>
-      <h5>Coffee</h5>
+        <i class="fas fa-coffee"></i>
       <p>
         Come say hi!
         <br>
@@ -268,9 +264,8 @@
     </div>
   </div>
 </div>
-
-  <p class="copyright">
-    Copyright 2021 | KPL</p>
+<p class="copyright">
+    Copyright 2022 | KPL</p>
   </div>
 </footer>
 </body>
