@@ -94,7 +94,6 @@ html {
 body {
   font-family:  'Roboto', sans-serif;
   font-size: 1em;
-  color: #564e4e;
   background-color: white;
 }
 
@@ -105,8 +104,8 @@ ul, ol {
 }
 
 a {
-  color: #564e4e;
   text-decoration: none;
+  color: #564e4e;
 }
 
 h1 {
@@ -119,7 +118,6 @@ h1 {
 
 h2 {
   font-family: 'New Tegomin', serif;
-  color: #564e4e;
   font-size: 2rem;
   line-height: 1.5;
   width: 100%;
@@ -142,7 +140,6 @@ h5 {
 .language-wrapper p, .tool-wrapper p {
   text-transform: uppercase;
   font-size: 1.125rem;
-  color: #564e4e;
 }
 
 .about-info h4, .contact-title {
@@ -226,18 +223,18 @@ figure {
   margin: 0 0 30px 0;
 }
 #contact h3 {
-  margin-bottom: 60px;
+  margin: 40px 0 40px 0;
 }
 .contact-info {
   margin: 0 0 60px 0;
 }
 .contact-title {
-  margin: 0 0 40px 0;
+  margin: 0 0 20px 0;
 }
 
   /* --------------------------- Base Header Styles --------------------- */
 header {
-  background-color: #c1ae8d;
+  background-color: #ecc6a2;
 }
 #logo {
   display: flex;
@@ -265,6 +262,7 @@ header nav ul li {
   text-align: left;
 }
 .intro h3 {
+  color: #564e4e;
   width: 100%;
   text-align: right;
   padding: 0 10px 0 10px;
@@ -273,9 +271,10 @@ header nav ul li {
 /* ---------------------------- Projects -------------------------- */
 #projects, #skills {
   width: 100%;
-  background-color: #7a989a;
+  background-color: #a43020;
 }
-.portfolio-header h2 {
+.portfolio-header {
+  color: #bcc2cc;
   width: 100%;
 }
 .portfolio-wrapper {
@@ -285,9 +284,14 @@ header nav ul li {
   flex-flow: row wrap;
 }
 #projects h4 {
+  color: #bcc2cc;
   text-decoration: underline;
 }
+.project-description {
+  color: #bcc2cc;
+}
 #projects p span {
+  color: #bcc2cc;
   font-size: 0.8rem;
 }
 .home-portfolio-piece {
@@ -303,21 +307,25 @@ header nav ul li {
 }
 .home-portfolio-piece figure {
   width: 100%;
-  filter: drop-shadow(1px 2px 6px lightgreen);
+  filter: drop-shadow(1px 2px 6px white);
 }
 /* ----------- Skills ----------- */
 #skills {
-  background-color: #849271;
+  background-color: #722d24;
+}
+#skills, .skills-header h2, .skillheader h4, .language-wrapper {
+  color: #bcc2cc;
 }
 #skills h4 {
-  margin: 40px 0 40px 0;
+  margin: 40px 0 20px 0;
   font-weight: bold;
   text-decoration: underline;
 }
 
 .language-wrapper p,
 .design-wrapper p {
-  background-color: #c1ae8d;
+  color: #564e4e;
+  background-color: #ecc6a2;
   padding: 10px 0;
   margin: 20px 0;
   font-size: 0.9rem;
@@ -329,20 +337,22 @@ header nav ul li {
 
 /* ----------- About ----------- */
 #about {
+  color: #bcc2cc;
   width: 100%;
-  background-color: #7a989a;
+  background-color: #a43020;
 }
 #profile-photo {
   width: 80%;
+  padding-bottom: 20px;
 }
 #about h3, #about h4, #about p {
-  color: #564e4e;
+  color: #bbcccc;
 }
 
 /* --------------------------- Base Footer Styles --------------------- */
 footer {
   color: #564e4e;
-  background-color: #c1ae8d;
+  background-color: #ecc6a2;
 }
 footer h3, footer h5, footer p, footer a {
   color: #564e4e;
@@ -395,7 +405,7 @@ footer .copyright p {
   text-align: center;
   padding-top: 20px;
   color: #564e4e;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
   /* ==========================================================================
