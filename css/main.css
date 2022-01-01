@@ -95,6 +95,7 @@ body {
   font-family:  'Roboto', sans-serif;
   font-size: 1em;
   background-color: white;
+  color: #222;
 }
 
 ul, ol {
@@ -105,12 +106,11 @@ ul, ol {
 
 a {
   text-decoration: none;
-  color: #564e4e;
+  color: #222;
 }
 
 h1 {
   font-family: 'New Tegomin', serif;
-  color:#564e4e;
   font-size: 2.5rem;
   line-height: 1.5;
   width: 100%;
@@ -130,11 +130,11 @@ h3 {
 }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 h5 {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .language-wrapper p, .tool-wrapper p {
@@ -147,7 +147,7 @@ h5 {
 }
 
 p, li {
-  font-size:  1rem;
+  font-size:  1.2rem;
   line-height: 1.5;
 }
 
@@ -234,7 +234,7 @@ figure {
 
   /* --------------------------- Base Header Styles --------------------- */
 header {
-  background-color: #ecc6a2;
+  background-color: #566c7d;
 }
 #logo {
   display: flex;
@@ -255,14 +255,13 @@ header nav ul li {
    align-items: center;
  }
  li a:hover {
-   text-decoration: underline solid #849271 3px;
+   text-decoration: underline solid #cd6c74 3px;
  }
 .intro h1 {
   width: 100%;
   text-align: left;
 }
 .intro h3 {
-  color: #564e4e;
   width: 100%;
   text-align: right;
   padding: 0 10px 0 10px;
@@ -271,10 +270,9 @@ header nav ul li {
 /* ---------------------------- Projects -------------------------- */
 #projects, #skills {
   width: 100%;
-  background-color: #a43020;
+  background-color: #dd9d91;
 }
 .portfolio-header {
-  color: #bcc2cc;
   width: 100%;
 }
 .portfolio-wrapper {
@@ -284,15 +282,10 @@ header nav ul li {
   flex-flow: row wrap;
 }
 #projects h4 {
-  color: #bcc2cc;
   text-decoration: underline;
 }
-.project-description {
-  color: #bcc2cc;
-}
 #projects p span {
-  color: #bcc2cc;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .home-portfolio-piece {
   width: 100%;
@@ -307,14 +300,11 @@ header nav ul li {
 }
 .home-portfolio-piece figure {
   width: 100%;
-  filter: drop-shadow(1px 2px 6px white);
+  filter: drop-shadow(1px 2px 6px grey);
 }
 /* ----------- Skills ----------- */
 #skills {
-  background-color: #722d24;
-}
-#skills, .skills-header h2, .skillheader h4, .language-wrapper {
-  color: #bcc2cc;
+  background-color: #cd6c74;
 }
 #skills h4 {
   margin: 40px 0 20px 0;
@@ -324,11 +314,9 @@ header nav ul li {
 
 .language-wrapper p,
 .design-wrapper p {
-  color: #564e4e;
-  background-color: #ecc6a2;
+  background-color: #566c7d;
   padding: 10px 0;
   margin: 20px 0;
-  font-size: 0.9rem;
   text-transform: uppercase;
 }
 .design {
@@ -337,25 +325,17 @@ header nav ul li {
 
 /* ----------- About ----------- */
 #about {
-  color: #bcc2cc;
   width: 100%;
-  background-color: #a43020;
+  background-color: #dd9d91;
 }
 #profile-photo {
   width: 80%;
   padding-bottom: 20px;
 }
-#about h3, #about h4, #about p {
-  color: #bbcccc;
-}
 
 /* --------------------------- Base Footer Styles --------------------- */
 footer {
-  color: #564e4e;
-  background-color: #ecc6a2;
-}
-footer h3, footer h5, footer p, footer a {
-  color: #564e4e;
+  background-color: #566C7D;
 }
 footer .contact-wrapper {
   display: flex;
@@ -404,7 +384,6 @@ footer .copyright p {
   margin: 20px 0;
   text-align: center;
   padding-top: 20px;
-  color: #564e4e;
   padding-bottom: 30px;
 }
 
