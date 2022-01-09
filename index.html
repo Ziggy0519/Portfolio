@@ -45,12 +45,12 @@
 
  <!-- Header -->
   <header>
-    <div id="logo">
-      <figure>
-        <img src="img/logo.png" alt="Logo">
-      </figure>
-    </div>
-    <div class="header-divider">
+    <div class="header-wrapper">
+      <div id="logo">
+        <figure>
+          <img src="img/logo.png" alt="Logo">
+        </figure>
+      </div>
     <nav>
       <ul>
         <li>
@@ -67,10 +67,12 @@
         </li>
       </ul>
     </nav>
-    
+    </div>
+
+  <div class="header-divider"></div>
     <div class="intro">
       <h1>Kerie London</h1>
-      <h3>Website designer and developer</h3>
+        <h3>Website designer and developer</h3>
    </div>
   </div>
 </header>
@@ -78,8 +80,9 @@
   <main>
   <!-- Projects -->
       <section id="projects">
-        <div class="content-wrapper"></div>
+        <div class="content-wrapper">
           <h2 class="portfolio-header">Projects</h2>
+
         <div class="portfolio-wrapper">
           <!-- Unplugged Retreat -->
           <div class="home-portfolio-piece">
@@ -97,7 +100,7 @@
                 Tools:
                 Photoshop, Chrome DevTools, GitHub Pages</span></p>
           </div>
-        <div class="portfolio-wrapper">
+
           <!-- Dorothy De Long -->
           <div class="home-portfolio-piece">
             <figure>
@@ -113,45 +116,25 @@
               Tools:
               InDesign, Figma, Photoshop, Illustrator</span></p>
           </div>
-        </div>
-        <div class="portfolio-wrapper">
+
           <!-- Sticky Notes -->
           <div class="home-portfolio-piece">
-          <figure>
-            <a href="https://xb801.csb.app/" target="blank">
-              <img src="img/sticky-notes.png" alt="Screenshot of Stickynotes">
-          </a>
-          </figure>
-          <h4>Sticky Notes</h4>
-          <p class="project-description">
-            "A greenfield project which is interactive.  User is able to add, edit, delete, and search for notes"
-          </p>
-            <p><span>Skills:
-            JSX, React, Components
-            <br>
-            Tools:
-            CodeSandBox, Props, State</span></p>
-        </div>
-        <div class="portfolio-wrapper">
-          <!-- Grinded Logo -->
-          <div class="home-portfolio-piece">
             <figure>
-              <a href="https://www.behance.net/kerielalos" target="blank">
-              <img src="img/logo-g.png" alt="Café logo">
+              <a href="https://xb801.csb.app/" target="blank">
+                <img src="img/sticky-notes.png" alt="Screenshot of Stickynotes">
               </a>
             </figure>
-            <h4>Café Logo</h4>
-            <p class="project-description">
-              "Logo and name created for a fictional café"
-            </p>
-              <p><span>Skills:
-              Branding Standards, Style Guide, Target Audience, Logo Design, Typography
-              <br>
-              Tools:
-              Photoshop, Illustrator, InDesign</span></p>
+              <h4>Sticky Notes</h4>
+                <p class="project-description">
+                  "A greenfield project which is interactive.  User is able to add, edit, delete, and search for notes"
+                </p>
+                  <p><span>Skills:
+                    JSX, React, Components
+                    <br>
+                    Tools: 
+                    CodeSandBox, Props, State</span></p>
           </div>
-        </div>
-        <div class="portfolio-wrapper">
+
           <!-- Recipe Cards -->
           <div class="home-portfolio-piece">
             <figure>
@@ -169,10 +152,28 @@
               Tools:
               Visual Studio Code, Photoshop</span></p>
               </div>
+
+          <!-- Grinded Logo -->
+          <div class="home-portfolio-piece">
+            <figure>
+              <a href="https://www.behance.net/kerielalos" target="blank">
+              <img src="img/logo-g.png" alt="Café logo">
+              </a>
+            </figure>
+            <h4>Café Logo</h4>
+            <p class="project-description">
+              "Logo and name created for a fictional café"
+            </p>
+              <p><span>Skills:
+              Branding Standards, Style Guide, Target Audience, Logo Design, Typography
+              <br>
+              Tools:
+              Photoshop, Illustrator, InDesign</span></p>
+          </div>
             </div>
           </div>
         </div>
-      </section>
+  </section>
 
       <!-- Skills -->
 <section id="skills">
@@ -212,13 +213,13 @@
       <div class ="about-info">
         <p class="about-text">
           I'm a real advocate for remote work and being able to help my friends and family with their businesses.  So joining the two together was a logical solution.  
-          I started this journey in 2020 through Skillcrush where I've been learning to design and code utilising a myraid of skills.  I'm here to help your business 
-          dreams become a reality by taking into consideration your goals and needs towards your final product.
+          I started this journey in 2020 through Skillcrush where I've been learning to design and code utilising a myraid of skills.  My goal is to help your business 
+          dreams become a reality by taking into consideration your needs towards your final product.
           <br>
           When not busy working, you can find me out and about with my two dogs, exploring beautiful Europe, 
           and sourcing the best speciality cafés around.
-        </p>
-          <p>Looking forward to connecting and creating with you soon!</p>
+          <br>
+          Looking forward to connecting and creating with you soon!</p>
         </div>
       </div>
     </div>
@@ -228,9 +229,9 @@
 <!-- Footer -->
 <footer>
   <div class="content-wrapper">
-      <div class="contact">
-        <h3>Contact Me</h3>
-          <address>
+    <h3>Contact Me</h3>
+      <div class="contact-wrapper">
+        <div class="contact">
             <p class="fontawesome-icon">
               <i class="far fa-paper-plane" aria-hidden="true"></i>
             </p>
@@ -238,7 +239,6 @@
               <a href="mailto:kerie@kpl.com">hello@kpl.com
               </a>
             </p>
-          </address>
         </div>
       <div class="social">
           <ul class="social-icons">
@@ -254,7 +254,7 @@
           </li>
         </ul>
     </div>
-    <div class="coffee">
+    <div class="contact">
       <p class="fontawesome-icon">
         <i class="fas fa-coffee"></i>
       </p>
@@ -265,10 +265,11 @@
         </p>
     </div>
   </div>
-</div>
+
 <p class="copyright">
-    Copyright 2022 | KPL</p>
+    <script>document.write(new Date().getFullYear())</script> | KPL</p>
   </div>
+</div>
 </footer>
 </body>
 
