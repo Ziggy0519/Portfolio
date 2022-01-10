@@ -210,6 +210,12 @@ figure {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+#profile-photo {
+  margin: 40px 0 20px 0;
+}
+.home-portfolio-piece {
+  padding: 30px 0 30px 0;
+}
 .projects p span {
   margin: 0;
   padding-bottom: 20px;
@@ -230,32 +236,40 @@ figure {
   margin: 0 0 30px 0;
 }
 .contact {
-  margin: 0 0 50px 0;
+  margin: 30px 0 50px 0;
 }
 footer h3 {
   margin: 30px 0 30px 0;
 }
 .social-icons {
-  margin-bottom: 40px;
+  margin: 20px 0 40px 0;
+}
+.social-icons li {
+  padding: 0 20px 0 0;
 }
 .copyright {
   margin: 40px 0 20px 0;
 }
   /* --------------------------- Base Header Styles --------------------- */
 header {
+  width: 100%;
   background-color: #566c7d;
 }
 #logo {
   width: 20%;
-  margin: 0 0 0 0;
+  margin: 0 0 0 10px;
 }
 .header-divider {
   width: 100%;
   height: 1px;
 }
 nav ul li {
+  width: 90%;
   font-size: .7rem;
   text-transform: uppercase;
+}
+nav a {
+  color: white;
 }
 nav ul {
    display: flex;
@@ -270,7 +284,7 @@ li a:hover {
   text-align: left;
 }
 .intro h3 {
-  width: 100%;
+  width: 80%;
   text-align: right;
   padding: 0 10px 0 10px;
 }
@@ -333,12 +347,17 @@ li a:hover {
 
 /* ----------- About ----------- */
 #about {
-  width: 100%;
   background-color: #dd9d91;
+}
+#about .content-wrapper{
+  width: 85%;
 }
 #profile-photo {
   width: 80%;
-  padding-bottom: 20px;
+  padding-top: 100px;
+}
+.about-text span {
+  font-style: italic;
 }
 
 /* --------------------------- Base Footer Styles --------------------- */
@@ -350,24 +369,23 @@ footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: flex-start;
 }
 .contact {
-  width: 60%;
+  width: 100%;
 }
 .social {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
-footer p, a {
+footer p, footer a {
   font-size: 1.2rem;
   color: white;
   text-decoration: none;
 }
 .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 footer ul {
   width: 100%;
@@ -381,7 +399,6 @@ footer ul {
 }
 .social-icons li i {
   font-size: 1.75rem;
-  color: white;
 }
 #footer p span {
   font-size: 1rem;
@@ -492,20 +509,26 @@ footer ul {
     line-height: 1.5;
   }
   h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     line-height: 1.333;
   }
   h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.25;
   }
   h4 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 1.1;
   }
   h5 {
     font-size: 1.3rem;
     line-height: 1;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  #projects p span {
+    font-size: 1.2rem;
   }
   header nav ul li {
     font-size: 1.2rem;
@@ -516,14 +539,14 @@ footer ul {
  
 
   /* Margins, Padding */
+  .intro {
+    margin-bottom: 30px;
+  }
   #projects {
     padding-top: 20px;
   }
   #skills {
     padding-bottom: 80px;
-  }
-  footer {
-    padding: 40px 0;
   }
   .portfolio-header {
     margin: 40px 0 40px 0;
@@ -540,6 +563,9 @@ footer ul {
   .about-text {
     padding: 20px 0 20px 0;
   }
+  footer {
+    padding: 40px 0;
+  }
   .contact {
     margin: 80px 0;
   }
@@ -549,7 +575,6 @@ footer ul {
     display: flex;
     align-items: center;
     flex-flow: row wrap;
-    justify-content: center;
     margin: 0;
   }
   #logo {
@@ -600,7 +625,7 @@ footer ul {
   }
 
   /* About */
-  .about-content-wrapper {
+  .about-wrapper {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -613,12 +638,20 @@ footer ul {
   }
 
   /* Footer */
+  .content-wrapper {
+    width: 100%;
+  }
   .contact {
-    display: flex;
     justify-content: space-between;
   }
-  footer .contact-info {
+  .contact {
     width: 33%;
+  }
+  .social {
+    width: 33%;
+  }
+  footer i {
+    font-size: 2rem;
   }
   footer ul {
     display: flex;
@@ -627,15 +660,11 @@ footer ul {
     flex-direction: row;
     width: 100%;
   }
-  footer .social-icons {
-    width: 12.5em;
-    justify-content: space-between;
-  }
   footer .social-icons li i {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   footer .copyright {
-    width: 100%;
+    font-size: 1rem;
   }
 }
 
@@ -648,13 +677,13 @@ footer ul {
 
   /* Font Styles */
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
   h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   h4 {
     font-size: 1.75rem;
@@ -671,11 +700,11 @@ footer ul {
 
   /* Margins */
   header {
-    padding-top: 80px;
-    padding-bottom: 140px;
+    padding-top: 60px;
+    padding-bottom: 100px;
   }
-  .logo {
-    padding-left: 5px;
+  #logo {
+    padding-left: 20px;
   }
   nav {
     margin-bottom: 80px;
@@ -684,18 +713,11 @@ footer ul {
     padding-top: 80px;
   }
   #skills {
-    padding-bottom: 120px;
-    padding-top: 120px;
-  }
-  #about {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  footer {
-    padding: 140px 0 140px 0;
+    padding-bottom: 80px;
+    padding-top: 80px;
   }
   h2 {
-    margin: 40px 0 0 0;
+    margin: 20px 0 40px 0;
   }
   .portfolio-header {
     margin: 0 0 60px 0;
@@ -709,27 +731,26 @@ footer ul {
   .skills-header {
     margin-bottom: 40px;
   }
-  .about-text {
-    margin: 0 0 30px 0;
+  #about {
+    padding: 80px 0 80px 0;
   }
-  .contact-info {
-    margin: 80px 0 80px 0;
+  .about-info {
+    margin-bottom: 30px;
   }
-  .contact-title {
-    margin: 0 0 30px 0;
+  footer {
+    padding: 80px 0 80px 0;
   }
 
   /* Header */
-  header .content-wrapper {
-    justify-content: flex-end;
-  }
-  .logo {
+  #logo {
     justify-content: left;
-    width: 25%;
+    width: 15%;
   }
   header nav {
-    justify-content: flex-end;
-    width: 45%;
+    width: 80%;
+  }
+  header nav ul {
+    font-size: 1rem;
   }
   .home-title {
     max-width: 95%;
@@ -744,27 +765,31 @@ footer ul {
   }
 
   /* Skills */
-  .skills, .tools {
+  .skill {
     width: 30%;
   }
 
   /* About */
-  .about-content-wrapper {
+  .about-wrapper {
+    display: flex;
     justify-content: space-between;
-    align-items: flex-start;
   }
-  #about figure {
-    width: 80%;
+  #profile-photo {
+    width: 45%;
+    margin: 0;
   }
   .about-info {
-    width: 50%;
+    width: 45%;
+  }
+  .about-info h2 {
+    margin: 0;
   }
 
   /* Footer */
-  footer .contact-wrapper {
-    max-width: 70%;
+  .contact-wrapper {
+    max-width: 100%;
   }
-  footer .social-icons {
+  .social-icons {
     width: 12.5em;
     justify-content: space-between;
   }
