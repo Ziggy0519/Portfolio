@@ -208,7 +208,7 @@ figure {
 }
 #about {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 #profile-photo {
   margin: 40px 0 20px 0;
@@ -229,20 +229,17 @@ figure {
 .skills-header {
   margin-bottom: 20px;
 }
-.about-info h3 {
+.about-info h2{
   margin: 40px 0 40px 0;
 }
 .about-text {
   margin: 0 0 30px 0;
 }
-.contact {
-  margin: 30px 0 50px 0;
-}
 footer h3 {
-  margin: 30px 0 30px 0;
+  margin: 30px 0 40px 0;
 }
 .social-icons {
-  margin: 20px 0 40px 0;
+  margin: 40px 0 40px 0;
 }
 .social-icons li {
   padding: 0 20px 0 0;
@@ -282,11 +279,13 @@ li a:hover {
 .intro h1 {
   width: 100%;
   text-align: left;
+  color: #000;
 }
 .intro h3 {
   width: 80%;
   text-align: right;
   padding: 0 10px 0 10px;
+  color: #000;
 }
 
 /* ---------------------------- Projects -------------------------- */
@@ -340,6 +339,7 @@ li a:hover {
   padding: 10px 0;
   margin: 20px 0;
   text-transform: uppercase;
+  color: #000;
 }
 .design {
   width: 100%;
@@ -354,9 +354,8 @@ li a:hover {
 }
 #profile-photo {
   width: 80%;
-  padding-top: 100px;
 }
-.about-text span {
+.about-info span {
   font-style: italic;
 }
 
@@ -365,13 +364,14 @@ footer {
   color: white;
   background-color: #566C7D;
 }
-.contact-wrapper {
+footer .contact-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: flex-start;
 }
-.contact {
-  width: 100%;
+.contact-info, .social {
+  width: 60%;
 }
 .social {
   display: flex;
@@ -566,7 +566,7 @@ footer ul {
   footer {
     padding: 40px 0;
   }
-  .contact {
+  .contact-info, .social-icons, .contact-email { 
     margin: 80px 0;
   }
   
@@ -638,16 +638,10 @@ footer ul {
   }
 
   /* Footer */
-  .content-wrapper {
-    width: 100%;
+  footer .content-wrapper {
+    width: 85%;
   }
-  .contact {
-    justify-content: space-between;
-  }
-  .contact {
-    width: 33%;
-  }
-  .social {
+  .contact-info, .social, .contact-email {
     width: 33%;
   }
   footer i {
