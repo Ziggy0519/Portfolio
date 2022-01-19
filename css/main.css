@@ -130,6 +130,7 @@ h3 {
 }
 
 h4 {
+  font-family: 'New Tegomin', serif;
   font-size: 1.5rem;
 }
 
@@ -302,9 +303,6 @@ li a:hover {
   align-items: flex-start;
   flex-flow: row wrap;
 }
-#projects h4 {
-  text-decoration: underline;
-}
 #projects p span {
   font-size: 1rem;
 }
@@ -330,7 +328,6 @@ li a:hover {
 #skills h4 {
   margin: 40px 0 20px 0;
   font-weight: bold;
-  text-decoration: underline;
 }
 
 .language-wrapper p,
